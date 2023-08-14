@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="ChatGptApiToolWinUI.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:CommunityToolkit.WinUI.UI.Controls"
+    Background="{ThemeResource SolidBackgroundFillColorBaseBrush}"
+    mc:Ignorable="d">
+
+    <controls:DockPanel>
+        <Button controls:DockPanel.Dock="Top" Content="API Call" Command="{x:Bind ViewModel.CallApiCommand}"></Button>
+        <TextBox controls:DockPanel.Dock="Top" Text="{x:Bind ViewModel.InputText, Mode=TwoWay}" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+        
+    </controls:DockPanel>
+</Page>

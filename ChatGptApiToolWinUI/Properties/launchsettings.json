@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "ChatGptApiToolWinUI (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "ChatGptApiToolWinUI (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
